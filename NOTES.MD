@@ -1,0 +1,3 @@
+- props
+- links
+- global variable

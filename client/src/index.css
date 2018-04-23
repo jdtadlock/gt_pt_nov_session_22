@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* padding: 25px 5%; */
+  font-family: sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+}
+
+a.active {
+  border-color: #fff;
+}
+
+header {
+  background: #444;
+  color: #fff;
+  padding: 7px 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav a:not(:last-child) {
+  margin-right: 5px;
+}
+
+.container {
+  padding: 25px 5%;
+}
