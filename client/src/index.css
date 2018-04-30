@@ -1,36 +1,102 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-  /* padding: 25px 5%; */
-  font-family: sans-serif;
+    /* padding: 25px 5%; */
+    font-family: sans-serif;
 }
 
 a {
-  color: #fff;
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
 }
 
-a.active {
-  border-color: #fff;
+a.active:not(.logo) {
+    border-color: #fff;
 }
 
-header {
-  background: #444;
-  color: #fff;
-  padding: 7px 5%;
-  display: flex;
-  justify-content: space-between;
-}
-
-header nav a:not(:last-child) {
-  margin-right: 5px;
+button, input, textarea {
+  outline: none;
 }
 
 .container {
-  padding: 25px 5%;
+    padding: 25px 5%;
+}
+
+.row,
+.column {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+/* Custom Styles */
+
+header {
+    background: #444;
+    color: #fff;
+    padding: 7px 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+header nav a:not(:last-child) {
+    margin-right: 5px;
+}
+
+form {
+    width: 350px;
+}
+
+form input[type="text"],
+form textarea,
+form button {
+    padding: 6px;
+    margin-bottom: 5px;
+}
+
+form textarea {
+    height: 150px;
+}
+
+form label {
+    margin-right: 7px;
+}
+
+form label input {
+    margin: 0 5px;
+}
+
+form button {
+    margin-top: 15px;
+}
+
+.note {
+    background: #555;
+    color: #fff;
+    padding: 15px;
+    margin: 10px 5px;
+}
+
+.note > * {
+    margin-bottom: 5px;
+}
+
+.note p {
+    font-size: .9rem;
+}
+
+.note button {
+    padding: 4px 15px;
+    margin: 5px 5px 0;
 }

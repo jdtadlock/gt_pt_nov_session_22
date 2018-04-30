@@ -1,22 +1,20 @@
 {
-  "name": "21_session_4_22_18",
+  "name": "22_session_4_29_18",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.18.2",
-    "express": "^4.16.3",
-    "mongodb": "^3.0.7",
-    "mongoose": "^5.0.15"
-  },
-  "devDependencies": {
-    "concurrently": "^3.5.1"
-  },
+  "main": "index.js",
   "scripts": {
-    "dev": "concurrently \"npm start\" \"cd ./client && npm start\"",
-    "start": "nodemon server.js"
+    "dev": "concurrently \"nodemon server.js\" \"cd ./client && npm start\""
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "concurrently": "^3.5.1",
+    "express": "^4.16.3",
+    "method-override": "^2.3.10",
+    "mongodb": "^3.0.7",
+    "mongoose": "^5.0.16"
+  }
 }

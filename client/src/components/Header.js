@@ -3,12 +3,13 @@ import { NavLink } from 'react-router-dom';
 
 const Header = (props) => (
   <header>
-    <h3>{props.title}</h3>
+    <NavLink to="/" exact className="logo">
+      <h3>{props.title}</h3>
+    </NavLink>
     <nav>
       {/* <button onClick={props.increase}>Increase</button> */}
 
-      <NavLink to="/" exact>Home</NavLink>
-      <NavLink to="/contact">Contact</NavLink>
+      <NavLink to="/create" exact>Create Note</NavLink>
     </nav>
   </header>
 );
